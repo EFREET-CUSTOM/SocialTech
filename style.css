@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/** PC、スマホ共通スタイル */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+p {
+	font-size: 15px;
+}
