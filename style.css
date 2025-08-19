@@ -4,46 +4,44 @@
 	--linkFontColor: #0d0d0d;
 }
 
+@function --pc-mobile(--pc, --mobile) {
+	result: if(media(width > 767px): var(--pc); else: var(--mobile));
+}
+
 /** PC、スマホ共通スタイル */
 * {
 	box-sizing: border-box;
-}
-
-body {
-	font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
 }
 
 p {
 	font-size: 15px;
 }
 
-/** PC用のスタイル */
-@media screen and (min-width: 768px) {
-	body {
-		max-width: 1080px;
-		min-width: 960px;
-		margin: 0 auto;
+body {
+	font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+	max-width: 1080px;
+	min-width: --pc-mobile(960px, 375px);
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+/** ナビゲーションのレイアウト */
+#nav-pc {
+	text-align: right;
+	font-size: 14px;
+	padding-top: 15px;
+
+	:is(a) {
+		color: var(--linkFontColor);
+		text-decoration: none;
+		margin-left: 20px;
 	}
 
-	header {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	/** ナビゲーションのレイアウト */
-	#nav-pc {
-		text-align: right;
-		font-size: 14px;
-		padding-top: 15px;
-
-		:is(a) {
-			color: var(--linkFontColor);
-			text-decoration: none;
-			margin-left: 20px;
-		}
-
-		:is(a:hover) {
-			text-decoration: underline;
-		}
+	:is(a:hover) {
+		text-decoration: underline;
 	}
 }
