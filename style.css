@@ -95,3 +95,40 @@ header {
 		z-index: 10;
 	}
 }
+
+/** 見出し */
+h2 {
+	margin-top: 40px;
+
+	&::after {
+		content: url("images/line.png");
+		margin-left: 10px;
+	}
+}
+
+h3 {
+	font-size: 27px;
+}
+
+/** mission */
+#mission {
+	margin: var(--gutter) auto;
+
+	#mission-flex {
+		display: flex;
+
+		:is(div) {
+			margin: 20px;
+			width: 50%;
+		}
+	}
+
+	#mission-photo {
+		width: 100%;
+	}
+
+	#s2dgs {
+		margin-top: 50px;
+		width: 100%;
+	}
+}
