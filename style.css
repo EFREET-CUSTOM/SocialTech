@@ -166,4 +166,8 @@ h3 {
 			}
 		}
 	}
+
+	.product-photo {
+		width: 100%;
+	}
 }
