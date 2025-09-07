@@ -170,4 +170,40 @@ h3 {
 	.product-photo {
 		width: 100%;
 	}
+
+	.product-explain {
+		background-color: var(--primaryBGColor);
+		position: absolute;
+		left: 0;
+		top: 280px;
+		margin: 0 calc(var(--gutter) / 2);
+		padding: calc(var(--gutter) / 4);
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+
+		:is(span) {
+			color: var(--primaryColor);
+			font-size: 16px;
+			font-weight: bold;
+			margin: 0;
+		}
+
+		:is(h3) {
+			font-size: 20px;
+			margin: 5px 0;
+		}
+
+		:is(p) {
+			font-size: 14px;
+			margin: 0;
+		}
+	}
+
+	#product-more {
+		text-align: center;
+
+		:is(a) {
+			position: relative;
+			bottom: -42px;
+		}
+	}
 }
