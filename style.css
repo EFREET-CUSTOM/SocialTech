@@ -207,3 +207,12 @@ h3 {
 		}
 	}
 }
+
+/** about us */
+#aboutus {
+	margin: var(--gutter) auto;
+
+	:is(div) {
+		display: flex;
+	}
+}
