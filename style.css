@@ -215,4 +215,14 @@ h3 {
 	:is(div) {
 		display: flex;
 	}
+
+	.culture-img {
+		width: 50%;
+		align-self: flex-start;
+	}
+
+	.culture-img2 {
+		width: 100%;
+		margin-top: 50px;
+	}
 }
