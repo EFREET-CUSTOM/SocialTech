@@ -228,5 +228,26 @@ h3 {
 
 	.culture-table {
 		margin-right: 50px;
+
+		.culture-num {
+			color: var(--primaryColor);
+			font-size: 80px;
+			padding: 0 20px 0 0;
+		}
+
+		:is(th) {
+			text-align: left;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.culture-en {
+			color: var(--primaryColor);
+			font-size: 24px;
+		}
+
+		.culture-description {
+			margin: 0;
+		}
 	}
 }
