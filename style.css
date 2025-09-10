@@ -207,3 +207,47 @@ h3 {
 		}
 	}
 }
+
+/** about us */
+#aboutus {
+	margin: var(--gutter) auto;
+
+	:is(div) {
+		display: flex;
+	}
+
+	.culture-img {
+		width: 50%;
+		align-self: flex-start;
+	}
+
+	.culture-img2 {
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	.culture-table {
+		margin-right: 50px;
+
+		.culture-num {
+			color: var(--primaryColor);
+			font-size: 80px;
+			padding: 0 20px 0 0;
+		}
+
+		:is(th) {
+			text-align: left;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.culture-en {
+			color: var(--primaryColor);
+			font-size: 24px;
+		}
+
+		.culture-description {
+			margin: 0;
+		}
+	}
+}
