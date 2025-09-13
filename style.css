@@ -338,4 +338,10 @@ h3 {
 			border-top-style: solid;
 		}
 	}
+
+	:is(iframe) {
+		width: 100%;
+		height: 368px;
+		margin-top: calc(var(--gutter) / 2);
+	}
 }
