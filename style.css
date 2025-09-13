@@ -302,3 +302,8 @@ h3 {
 		}
 	}
 }
+
+/** company */
+#company {
+	margin: var(--gutter) auto;
+}
