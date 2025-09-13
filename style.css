@@ -251,3 +251,54 @@ h3 {
 		}
 	}
 }
+
+/** vision */
+#vision {
+	margin: var(--gutter) auto;
+
+	> :is(div) {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.vision-box {
+		width: 300px;
+		height: 300px;
+		margin-bottom: 30px;
+		position: relative;
+
+		:is(img) {
+			width: 100%;
+			position: relative;
+			z-index: 30;
+		}
+
+		:is(div) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 31;
+			margin-right: 20px;
+
+			:is(h4) {
+				color: var(--primaryColor);
+				font-size: 19px;
+				margin-top: var(--gutter);
+
+				&::first-letter {
+					font-size: 40px;
+				}
+			}
+
+			:is(h5) {
+				font-size: 20px;
+				margin: 0;
+			}
+
+			:is(p) {
+				margin-top: 10px;
+			}
+		}
+	}
+}
