@@ -251,3 +251,21 @@ h3 {
 		}
 	}
 }
+
+/** vision */
+#vision {
+	margin: var(--gutter) auto;
+
+	> :is(div) {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.vision-box {
+		width: 300px;
+		height: 300px;
+		margin-bottom: 30px;
+		position: relative;
+	}
+}
