@@ -356,6 +356,21 @@ h3 {
 			flex-direction: row;
 			flex-wrap: wrap;
 			padding-bottom: 30px;
+
+			.contact-heading {
+				width: 240px;
+				align-self: center;
+			}
+
+			.contact-label {
+				font-weight: bold;
+			}
+
+			.contact-span {
+				color: #ce2222;
+				margin-left: 20px;
+				font-weight: bold;
+			}
 		}
 	}
 }
