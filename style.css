@@ -345,3 +345,17 @@ h3 {
 		margin-top: calc(var(--gutter) / 2);
 	}
 }
+
+/** contact */
+#contact {
+	margin: var(--gutter) auto;
+
+	> :is(form) {
+		> :is(div) {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			padding-bottom: 30px;
+		}
+	}
+}
