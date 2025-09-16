@@ -413,3 +413,17 @@ h3 {
 		}
 	}
 }
+
+/** footer */
+footer {
+	--primaryBGColor: #0d0d0d;
+	--linkFontColor: white;
+
+	background-color: var(--primaryBGColor);
+	text-align: center;
+	padding: var(--gutter) var(--gutter) 30px var(--gutter);
+
+	#footer-logo {
+		margin-bottom: 30px;
+	}
+}
