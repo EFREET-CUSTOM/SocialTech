@@ -426,4 +426,18 @@ footer {
 	#footer-logo {
 		margin-bottom: 30px;
 	}
+
+	#footer-link {
+		margin-bottom: 50px;
+
+		> :is(a) {
+			text-decoration: none;
+			margin: 10px;
+			color: var(--linkFontColor);
+		}
+
+		> :is(a:hover) {
+			text-decoration: underline;
+		}
+	}
 }
