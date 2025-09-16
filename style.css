@@ -440,4 +440,19 @@ footer {
 			text-decoration: underline;
 		}
 	}
+
+	#sns-footer {
+		display: flex;
+		justify-content: space-between;
+		text-align: left;
+
+		:is(a) {
+			margin-right: 30px;
+		}
+	}
+
+	#copyright {
+		color: var(--linkFontColor);
+		margin: 0;
+	}
 }
