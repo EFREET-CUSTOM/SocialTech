@@ -59,6 +59,14 @@ header {
 	}
 }
 
+#menu-sp {
+	display: block;
+	background-color: transparent;
+	float: right;
+	padding: 0;
+	border: none;
+}
+
 /** main-visual */
 #main-visual {
 	position: relative;
