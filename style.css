@@ -67,6 +67,17 @@ header {
 	border: none;
 }
 
+#nav-sp {
+	background-color: var(--primaryColor);
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	display: none;
+	z-index: 100;
+}
+
 /** main-visual */
 #main-visual {
 	position: relative;
