@@ -76,6 +76,28 @@ header {
 	width: 100%;
 	display: none;
 	z-index: 100;
+
+	:is(div) {
+		:is(ul) {
+			padding-left: 0;
+
+			:is(li) {
+				list-style: none;
+			}
+		}
+	}
+}
+
+#close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background-color: transparent;
+	border: none;
+}
+
+#logo-sp {
+	margin: 80px 0 30px 20px;
 }
 
 /** main-visual */
