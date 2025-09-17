@@ -119,6 +119,16 @@ header {
 	margin: 80px 0 30px 20px;
 }
 
+#sns {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+
+	> :is(a) {
+		margin-right: 30px;
+	}
+}
+
 /** main-visual */
 #main-visual {
 	position: relative;
